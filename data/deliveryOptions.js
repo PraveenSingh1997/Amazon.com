@@ -1,3 +1,7 @@
+
+
+
+
 export const deliveryOptions = [{
     id : '1' , 
     deliveryDays : 7 , 
@@ -14,3 +18,20 @@ export const deliveryOptions = [{
     priceCents : 999  
 }
 ]
+
+
+export function getDeliveryOption(deliveryOptionId){
+    let deliveryOption ; 
+
+    deliveryOptions.forEach((option) => {
+
+        if(option.id === deliveryOptionId){
+            deliveryOption = option ; 
+        }
+
+    });
+
+    return deliveryOption ; 
+}
+
+//console.log(getDeliveryOption('2').priceCents);

@@ -56,7 +56,7 @@ products.forEach((product) => {
 
 });
 
-console.log(productHTML) ; 
+
 
 
 
